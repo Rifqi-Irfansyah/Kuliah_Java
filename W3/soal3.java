@@ -13,7 +13,7 @@ public class soal3 {
         String s[] = str.split(" ");
         int a = Integer.parseInt(s[0]);
         int b = Integer.parseInt(s[2]);
-        if (a <= 1 || a >= 1000 || b <=1 || b >= 1000)
+        if (a < 1 || a > 1000 || b <1 || b > 1000)
             System.out.println("Operand tidak memenuhi");
         else{
             if(s[1].equals("+"))
