@@ -10,15 +10,15 @@ public class soal2 {
         String word[] = new String[3];
         int number [] = new int[3];
         String kata;
-        int angka;
         
         for (i=0; i<3; i++){
-            System.out.print("Masukkan kata      = ");
-            kata = sc.next();
-            System.out.print("\nMasukkan Angka   = ");
-            angka = sc.nextInt();
-            word[i] = kata;
-            number[i] = angka;
+            int y = 0;
+            System.out.print("Masukkan kata & angka = ");
+            kata = sc.nextLine();
+            String pemisah[] = kata.split(" ");
+
+            word[i] = pemisah[y];
+            number[i] = Integer.parseInt(pemisah[y+1]);
         }
         sc.close();
 
