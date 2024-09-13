@@ -1,8 +1,7 @@
-package W4.soal3;
-import W4.soal3.Product;
-import W4.soal3.Sales;
 
-public class Main {
+import com.polban.jtk.sales.*;
+
+public class Soal3Jar {
     public static void main(String[] args) {
         Product prod = new Product("Laptop", 150000000, 10);
         

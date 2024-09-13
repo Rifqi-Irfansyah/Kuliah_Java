@@ -1,7 +1,7 @@
-package W4.soal3;
+package W4.soal1;
 
 // Kelas Sales untuk mengelola transaksi penjualan
-class Sales {
+public class Sales {
     private Product product;
 
     // Constructor

@@ -1,7 +1,7 @@
-package W4.soal3;
+package W4.soal1;
 
 // Kelas Product
-class Product {
+public class Product {
     // Atribut private untuk menyembunyikan informasi
     private String productName;
     private double price;

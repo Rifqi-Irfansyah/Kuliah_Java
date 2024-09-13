@@ -1,6 +1,6 @@
 package W4;
 
-public class Inventori {
+public class Soal2Inventori {
     Barang[] barangs;
 
     void initBarang() {
@@ -26,7 +26,7 @@ public class Inventori {
 
 
     public static void main(String[] args) {
-        Inventori beli = new Inventori();
+        Soal2Inventori beli = new Soal2Inventori();
         beli.pengadaan();
     }
 }

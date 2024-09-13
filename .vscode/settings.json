@@ -2,6 +2,7 @@
     "java.project.referencedLibraries": [
         "lib/saleslibrary.jar",
         "D:/Rifqi Irfansyah/KULIAH/Semester 3/PBO P/Java/W4/penggunaanJar/lib/saleslibrary.jar",
-        "W4/penggunaanJar/lib/saleslibrary.jar"
+        "W4/penggunaanJar/lib/saleslibrary.jar",
+        "d:\\saleslibrary.jar"
     ]
 }
