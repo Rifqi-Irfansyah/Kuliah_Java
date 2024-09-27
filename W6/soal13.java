@@ -29,8 +29,7 @@ public class soal13 {
 
     System.out.println("to String = " + c1.toString());
     
-}
-
+    }
 }
 
 class Cylinder extends circle { 
