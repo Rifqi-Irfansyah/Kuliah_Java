@@ -1,4 +1,4 @@
-public class Delivery {
+public class Delivery extends ServicePackage{
     private Status status;
     private ServicePackage servicePackage;
     private City city;
@@ -6,6 +6,24 @@ public class Delivery {
 	private int quantity;
 	private int priceItem;
 	private String productName;
+    private String statusPayment;
+    private String methodPayment;
+
+    public String getPaymentStatus(){
+        return statusPayment;
+    }
+
+    public String getPaymentMethod(){
+        return methodPayment;
+    }
+
+    public void setPaymentStatus(String statusPayment){
+        this.statusPayment = statusPayment;
+    }
+
+    public void setPaymentMethod(String methodPayment){
+        this.methodPayment = methodPayment;
+    }
 
     public Delivery(Status status, ServicePackage servicePackage, City city, int weight, int quantity, int priceItem, String productName) {
         this.status = status;
@@ -17,8 +35,8 @@ public class Delivery {
         this.productName = productName;
     }
 
-    public Delivery(int weight, int quantity, int priceItem, String productName) {
-        this.weight = weight;
+    public Delivery(int weighet, int quantity, int priceItem, String productName) {
+        this.weight = weighet;
         this.quantity = quantity;
         this.priceItem = priceItem;
         this.productName = productName;

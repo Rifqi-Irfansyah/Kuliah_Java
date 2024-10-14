@@ -14,7 +14,7 @@
  "weight":2, 
  "quantity":1,  
  "priceItem": 80000, 
- "productName": "Celana Jeans" 
+ "productName": "Celana Jeans"
 },
 
 { 
@@ -32,5 +32,6 @@
  },  
  "weight":2, "quantity":2, 
  "priceItem": 90000, 
- "productName": "Kemeja Lengan Panjang"  
+ "productName": "Kemeja Lengan Panjang"
+
  }]
