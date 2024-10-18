@@ -1,22 +1,22 @@
 package W9.SK2;
 
 public class Rectangle extends  Shape{
-    private final double radius;
+    private final double width;
     private final double height;
     
-    public  Rectangle(double r, double h){
+    public Rectangle(double w, double h){
         super("Rectangle");
-        radius = r;
+        width = w;
         height = h;
     }
 
     @Override
     public double area(){
-        return Math.PI*radius*radius*height;
+        return width*height;
     }
 
     @Override
     public String toString(){
-        return super.toString() + " of radius " + radius + " & height " + height;
+        return super.toString() + " of width " + width + " & height " + height;
     }
 }

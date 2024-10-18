@@ -7,9 +7,9 @@ public class PaintThings {
         final double COVERAGE = 350;
         Paint paint = new Paint(COVERAGE);
 
-        Rectangle deck = new Rectangle(20, 35);
-        Sphere bigBall = new Sphere(15);
-        Cylinder tank = new Cylinder(10, 30);
+        Shape deck = new Rectangle(20, 35);
+        Shape bigBall = new Sphere(15);
+        Shape tank = new Cylinder(10, 30);
 
         System.out.println(deck.toString());
         System.out.println(bigBall.toString());

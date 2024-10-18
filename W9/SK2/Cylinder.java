@@ -1,22 +1,22 @@
 package W9.SK2;
 
 public class Cylinder extends  Shape{
-    private final double width;
+    private final double radius;
     private final double height;
     
-    public  Cylinder(double w, double h){
+    public  Cylinder(double r, double h){
         super("Cylinder");
-        width = w;
+        radius = r;
         height = h;
     }
 
     @Override
     public double area(){
-        return width*height;
+        return Math.PI*radius*radius*height;
     }
 
     @Override
     public String toString(){
-        return super.toString() + " of width " + width + " & height " + height;
+        return super.toString() + " of radius " + radius + " & height " + height;
     }
 }
