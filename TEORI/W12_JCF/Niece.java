@@ -20,7 +20,7 @@ public class Niece {
     }
 
     public String getBirth(){
-        return "date: " + day + " month :" + month;
+        return "month :" + month + " date: " + day ;
     }
 
     public void setListPresents(String present, Uncle uncle) {
@@ -36,7 +36,7 @@ public class Niece {
         return i;
     }
 
-    public Map<String, Uncle> getListPresents() {
+    public Map<String, Uncle> getListPresent(){
         return ListPresents;
     }
 }

@@ -4,10 +4,7 @@ import java.util.TreeMap;
 
 public class Uncle{
     private String name;
-    // private Map<String, Integer> recipient = new TreeMap<>();
     private Map<String, Niece> presents = new TreeMap<>();
-    // private Map<String, String> uncle_presents = new TreeMap<>();
-    // private Map<String, Map<Niece, String>> uncleToPresents = new HashMap<>();
 
     public Uncle(String name){
         this.name = name;
@@ -28,7 +25,7 @@ public class Uncle{
         }
     }
 
-    public Map<String, Niece> listPresents(){
-        return this.presents;
-    } 
+    public Map<String, Niece> getListPresent(){
+        return presents;
+    }
 }
