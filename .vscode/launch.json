@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "TEORI.W12_JCF.Main",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "Airport",
             "request": "launch",
             "mainClass": "com.example.Airport",
