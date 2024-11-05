@@ -19,11 +19,12 @@ public class Main {
         fm.addUncle(uncle3);
         fm.addUncle(uncle3);
         fm.addUncle(uncle3);
-        // fm.ListNieces();
+        fm.ListNieces();
         fm.ListUncles();
 
         uncle1.addPresent(niece1, "Laptop");
         uncle1.addPresent(niece2, "Mackbook");
         fm.ListNiecePresents(niece1);
+        fm.ListUnclePresents(uncle1);
     }
 }
