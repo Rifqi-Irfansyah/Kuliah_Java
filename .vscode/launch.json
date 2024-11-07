@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WildCardSimpleExample",
+            "request": "launch",
+            "mainClass": "W12_Generic.WildCardSimpleExample",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "BoundedClass",
+            "request": "launch",
+            "mainClass": "W12_Generic.BoundedClass",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "GenericsMethods",
+            "request": "launch",
+            "mainClass": "W12_Generic.GenericsMethods",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "W12_Generic.Main",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "GenericsType",
+            "request": "launch",
+            "mainClass": "W12_Generic.GenericsType",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "GenericsTypeOld",
+            "request": "launch",
+            "mainClass": "W12_Generic.GenericsTypeOld",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "TEORI.W12_JCF.Main",
