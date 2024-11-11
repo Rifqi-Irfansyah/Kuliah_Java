@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleGUI",
+            "request": "launch",
+            "mainClass": "SimpleGUI",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "WildCardSimpleExample",
             "request": "launch",
             "mainClass": "W12_Generic.WildCardSimpleExample",
