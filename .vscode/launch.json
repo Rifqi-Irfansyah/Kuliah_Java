@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "TEORI.W14_CleanCode.main",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "before",
+            "request": "launch",
+            "mainClass": "TEORI.W14_CleanCode.before",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "SimpleGUI",
             "request": "launch",
             "mainClass": "SimpleGUI",
