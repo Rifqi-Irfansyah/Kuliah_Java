@@ -1,12 +1,11 @@
 import java.awt.*;
-import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 public class SimpleGUI {
-    private static int total_bayar = 0;
+    private static int totalBayar = 0;
     private static JTextArea dataPenjualan;
     private static JTextField inNama;
     private static JTextField inAlamat;
@@ -17,7 +16,7 @@ public class SimpleGUI {
         JFrame frame = new JFrame("Program GUI Sederhana");
         frame.setSize(600, 500);
         frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
         frame.setLayout(new BorderLayout());
@@ -113,20 +112,17 @@ public class SimpleGUI {
         panel2.add(total);
         panel2.add(outTotal);
 
-        ItemListener itemListener = new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                total_bayar = 0;
+        ItemListener itemListener = e -> {
+            totalBayar = 0;
 
-                if (menu1.isSelected()) 
-                    total_bayar += 10000;
-                if (menu2.isSelected()) 
-                    total_bayar += 15000;
-                if (menu3.isSelected()) 
-                    total_bayar += 20000;
+            if (menu1.isSelected()) 
+                totalBayar += 10000;
+            if (menu2.isSelected()) 
+                totalBayar += 15000;
+            if (menu3.isSelected()) 
+                totalBayar += 20000;
 
-                outTotal.setText("Rp " + total_bayar);
-            }
+            outTotal.setText("Rp " + totalBayar);
         };
 
         menu1.addItemListener(itemListener);
@@ -153,7 +149,7 @@ public class SimpleGUI {
                 pesanan.append("  - Pizza\t(Rp 20.000)\n");
             
             pesanan.append("====================================\n");
-            pesanan.append("Total Bayar : " + total_bayar);
+            pesanan.append("Total Bayar : " + totalBayar);
 
             dataPenjualan.setText(pesanan.toString());
         });
