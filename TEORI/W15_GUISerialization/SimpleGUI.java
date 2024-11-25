@@ -11,13 +11,13 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -190,7 +190,7 @@ public class SimpleGUI {
         panelSave.add(buttonSave);
         panelSave.add(buttonOpen);
 
-        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 10, 10);  // Jarak antar komponen horizontal dan vertikal 10px
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER, 10, 10);
         panelSave.setLayout(flowLayout);
 
         panel3.add(dataPenjualan);
@@ -203,23 +203,25 @@ public class SimpleGUI {
                 ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
 
                 out.writeObject(save);
-                System.out.println("Serialized data is saved in person.ser");
-
+                JOptionPane.showMessageDialog(null, "Data berhasil disimpan!", 
+                    "Informasi", JOptionPane.INFORMATION_MESSAGE);
             } catch (IOException i) {
                 System.out.println(i);
             }
         });
 
         buttonOpen.addActionListener(e -> {
-            SaveFile open = null;
+            SaveFile open;
 
             try (FileInputStream fileIn = new FileInputStream("savefile.ser");
                 ObjectInputStream in = new ObjectInputStream(fileIn)) {
                 
                 open = (SaveFile) in.readObject();
-                System.out.println("Deserialized Person: " + open.getContent());
+                dataPenjualan.setText(open.getContent());
 
             } catch (IOException | ClassNotFoundException i) {
+                JOptionPane.showMessageDialog(null, i, 
+                    "Peringatan", JOptionPane.WARNING_MESSAGE);
                 System.out.println(i);
             }
         });
@@ -230,12 +232,10 @@ public class SimpleGUI {
 class SaveFile implements Serializable {
     private final String content;
     
-    // Constructor
     public SaveFile(String content) {
         this.content = content;
     }
     
-    // Getters and Setters
     public String getContent() {
         return content;
     }
