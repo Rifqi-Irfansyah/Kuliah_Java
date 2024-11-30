@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrototypePatternExample",
+            "request": "launch",
+            "mainClass": "W14_DesignPattern.PrototypePatternExample",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "StatePatternVendingMachineExample",
+            "request": "launch",
+            "mainClass": "W14_DesignPattern.StatePatternVendingMachineExample",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "ProxyPatternExample",
+            "request": "launch",
+            "mainClass": "W14_DesignPattern.ProxyPatternExample",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "StatePatternExample",
+            "request": "launch",
+            "mainClass": "W14_DesignPattern.StatePatternExample",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "SimpleGUI",
             "request": "launch",
             "mainClass": "TEORI.W15_GUISerialization.SimpleGUI",
