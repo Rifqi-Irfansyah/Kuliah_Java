@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "tes",
+            "request": "launch",
+            "mainClass": "eas.tes",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Soal3",
+            "request": "launch",
+            "mainClass": "eas.Soal3",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Soal2",
+            "request": "launch",
+            "mainClass": "eas.Soal2",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Soal1",
+            "request": "launch",
+            "mainClass": "eas.Soal1",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "W14_DesignPattern.Main",
+            "projectName": "Java_9a814ff1"
+        },
+        {
+            "type": "java",
             "name": "PrototypePatternExample",
             "request": "launch",
             "mainClass": "W14_DesignPattern.PrototypePatternExample",
